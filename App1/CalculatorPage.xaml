@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.CalculatorPage"
+             Title="Кредитный калькулятор">
+    <StackLayout Padding="20">
+        <Label Text="Сумма кредита:" Style="{StaticResource LabelStyle}" />
+        <Entry x:Name="LoanAmountEntry" Placeholder="Введите сумму" Keyboard="Numeric" Style="{StaticResource EntryStyle}" />
+        <Label Text="Срок (в месяцах):" Style="{StaticResource LabelStyle}" />
+        <Entry x:Name="LoanTermEntry" Placeholder="Введите срок" Keyboard="Numeric" Style="{StaticResource EntryStyle}" />
+        <Label Text="Процентная ставка:" Style="{StaticResource LabelStyle}" />
+        <Slider x:Name="interestRateSlider" Minimum="0" Maximum="100" Value="5" ValueChanged="OnSliderValueChanged" />
+        <Label x:Name="InterestRateLabel" Text="5%" />
+        <Label Text="Ежемесячный платеж:" Style="{StaticResource LabelStyle}" />
+        <Label x:Name="MonthlyPaymentLabel" />
+    </StackLayout>
+</ContentPage>
+
+

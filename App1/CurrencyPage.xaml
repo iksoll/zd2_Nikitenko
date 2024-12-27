@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.CurrencyPage"
+             Title="Курсы валют">
+    <StackLayout Padding="20">
+        <Label Text="Центробанк РФ" FontSize="Medium" HorizontalOptions="Center" Style="{StaticResource LabelStyle}" />
+        <StackLayout Style="{StaticResource CurrencySectionStyle}">
+            <Label Text="USD: 80.000" Style="{StaticResource LabelStyle}" />
+            <Label Text="EUR: 86.000" Style="{StaticResource LabelStyle}" />
+        </StackLayout>
+        <Label Text="Текущая дата:" Style="{StaticResource LabelStyle}" />
+        <DatePicker />
+    </StackLayout>
+</ContentPage>
+

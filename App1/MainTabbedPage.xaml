@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:App1"
+            x:Class="App1.MainTabbedPage"
+            Title="Ozon Банк">
+    <TabbedPage.Children>
+        <NavigationPage Title="Кредитный калькулятор" IconImageSource="calculator.png">
+            <x:Arguments>
+                <local:CalculatorPage />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Курсы валют" IconImageSource="currency.png">
+            <x:Arguments>
+                <local:CurrencyPage />
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>

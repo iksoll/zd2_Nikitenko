@@ -1,0 +1,92 @@
+/* Общие стили для всего приложения */
+body {
+    background-color: #ffffff; /* Белый фон для чистоты и легкости */
+    color: #333333; /* Темный текст для контраста */
+    font-family: 'Roboto', Arial, sans-serif; /* Современный шрифт */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #1d1d1d; /* Темно-серый для заголовков */
+    font-weight: bold;
+}
+
+/* Стили кнопок */
+button {
+    background-color: #0051cc; /* Синий цвет (похож на корпоративные цвета) */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003d99; /* Тёмный синий при наведении */
+}
+
+/* Стили для полей ввода (Entry) */
+entry {
+    background-color: #f2f2f2; /* Светлый серый фон */
+    border: 1px solid #ccc; /* Светлая граница */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Стили для меток */
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Стили для активных элементов ввода */
+entry:focus {
+    border-color: #0051cc; /* Синий цвет при фокусе */
+    background-color: #ffffff; /* Белый фон при фокусе */
+}
+
+/* Стили для разделов с курсами валют */
+.currency-section {
+    background-color: #f7f7f7; /* Светлый фон для информации */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень для выделения */
+    margin-bottom: 20px;
+}
+
+/* Стили для вывода валют */
+.currency-label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.currency-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0051cc; /* Синий цвет для валют */
+}
+
+/* Стили для формы ввода данных */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Стили для селектора даты */
+date-picker {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
